@@ -80,7 +80,6 @@ h2 {
 
 .product-item >img {
     height: 400px;
-    margin: 50px;
 }
 
 .purchase-button {
@@ -202,7 +201,7 @@ h2 {
     }
 
     .design-carousel {
-        margin-top: 100px;
+        margin-top: 25px;
     }
 
     .about-container {
@@ -213,6 +212,10 @@ h2 {
 
     .index-bottom {
         margin-top: 50px;
+    }
+
+    .product-item >img {
+        height: 300px;
     }
     
 
