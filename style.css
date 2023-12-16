@@ -1,0 +1,255 @@
+/* Global CSS */
+body {
+    min-height: 400px;
+    margin-bottom: 75px;
+    clear: both;
+ }
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Playball";
+    margin: 30px;
+}
+
+h2 {
+    font-family: "Playball";
+    color: #dc3545;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Indie Flower";
+}
+
+.navbar-brand > img {
+    width: 8rem;
+}
+
+.footer {
+    display: grid;
+    position: fixed;
+    grid-template-rows: 1fr 1fr;
+    height: 75px;
+    background-color: #dc3545;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.footer_links > a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 10px;
+    color: white;  
+}
+
+/* Home CSS*/
+.home-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    justify-content: center;
+}
+
+.home-item { 
+    font-size: 3rem;
+    color:#dc3545;
+    font-family: "Playball";
+    padding: 30px;
+}
+
+.home-carousel {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-item >img {
+    height: 400px;
+}
+
+.purchase-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+.purchase-button:hover {
+    opacity: 1;
+}
+
+.index-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+/*Design CSS */
+.design-carousel {
+    display: grid;
+    justify-content: center;
+ }
+
+.design-item {
+    height: 500px;
+    width: 500px;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    .transition(.3s ease-in-out left);
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: .75rem;
+    color: white;
+}
+
+.about-text > p {
+    font-family: "Indie Flower";
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+@media (min-width: 319px) and (max-width: 480px) { 
+    h1 {
+        display: none;
+    }
+
+    .nav-item{
+        display: flex;
+        justify-content: flex-end;
+        margin: 5%;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-family: "Indie Flower";
+    }
+    
+    .navbar-brand > img {
+        width: 6rem;
+    }
+
+    .carousel {
+        display: grid;
+        justify-content: center;
+     }
+    
+    .about-image > img {
+        height: 20rem;
+        margin-top: 5px;
+        border-radius: 50%;
+        border: 5px solid #dc3545;
+    
+    }
+    
+    .about-text > p {
+        font-family: "Indie Flower";
+        font-size: 1.5rem;
+        text-wrap: wrap;
+        margin: 25px;
+    }
+
+    
+    #copyright {
+        display: flex;
+        justify-content: center;
+        font-size: .5rem;
+        color: white;
+    }
+
+    .home-item { 
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    .design-item {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .design-carousel {
+        margin-top: 100px;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .index-bottom {
+        margin-top: 50px;
+    }
+    
+
+}
+  
+@media (min-width: 481px) and (max-width: 1200px) {
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image > img {
+
+        height: 30rem;
+        margin-top: 1px;
+        border-radius: 50%;
+        border: 5px solid #dc3545;
+    
+    }
+    
+}  
+
+@media (min-width: 1201px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        justify-content: center;
+    }
+    
+    .about-image > img {
+        display: flex;
+        align-items: center;
+        height: 30rem;
+        margin-top: 20px;
+        margin-left: 250px;
+        border-radius: 50%;
+        border: 5px solid #dc3545;
+    
+    }
+
+}  
