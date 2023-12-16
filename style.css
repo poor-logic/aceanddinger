@@ -117,10 +117,16 @@ h2 {
     width: 500px;
 }
 
-.carousel-item {
+.home-item {
     display: none;
     position: relative;
-    .transition(.3s ease-in-out left);
+    transition-duration: 0.01s;
+}
+
+.product-item {
+    display: none;
+    position: relative;
+    transition-duration: 1s;
 }
 
 #copyright {
